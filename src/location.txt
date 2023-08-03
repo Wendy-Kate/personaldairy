@@ -1,0 +1,15 @@
+{
+    "Version": 1,
+    "Key": "348735",
+    "Type": "City",
+    "Rank": 31,
+    "LocalizedName": "Boston",
+    "Country": {
+      "ID": "US",
+      "LocalizedName": "United States"
+    },
+    "AdministrativeArea": {
+      "ID": "MA",
+      "LocalizedName": "Massachusetts"
+    }
+  }

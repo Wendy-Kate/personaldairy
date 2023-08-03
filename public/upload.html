@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <title>add daily</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/assets/css/docs.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../src/upload.css?v=11">
+    <script type="module">
+      import {bind} from "../src/upload.js?v=17";
+      window.addEventListener("DOMContentLoaded", (event) => {
+        bind()
+      });
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="up">
+        <div id="inputc" contenteditable="true"></div>
+        <div>          
+            <button id="a_loc"  class="btn btn-outline-primary"><i class="bi bi-geo-alt"></i>location</button>
+            <button id="a_emoji"  class="btn btn-outline-primary"><i class="bi bi-emoji-smile"></i>emoji</button>
+        </div>
+        <div id="eee">
+
+        </div>
+        <div id="lll" class="container-fluid" >
+          <div class="row">
+            <div class="col">
+              <span id="location_cou">Address</span>
+              <span id="location_sta"></span>
+              <span id="location_city"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Country
+              </button>
+              <ul class="dropdown-menu" id="country" aria-labelledby="dropdownMenuButton">
+              </ul>
+            </div>
+            <div class="col dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                States
+              </button>
+              <ul class="dropdown-menu" id="states" aria-labelledby="dropdownMenuButton">
+              </ul>
+            </div>
+            <div class="col dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                City
+              </button>
+              <ul class="dropdown-menu" id="city" aria-labelledby="dropdownMenuButton">
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="text-align: right;">
+              <button id="locsubmit" class="btn btn-primary">Comfirm</button>
+            </div>
+          </div>
+        </div>
+        <div id="img_div">
+            <img id="imgSelf">
+            <input type="file" id="imgUpload" accept=".png, .jpg, .jpeg">
+        </div>
+        <div>
+          <button id="a_cancel" onclick="window.location.href='/term/public/index.html'" class="btn btn-primary">Cancel</button>
+          <button id="a_submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div> 
+  </body>
+</html>
