@@ -290,7 +290,7 @@ function saveData(filePath, content,weather,nowdate) {
 const submitButton = document.getElementById('a_submit');
 submitButton.addEventListener('click', async event=>{
 	await handleSubmit()
-	window.location.href = "index.html"
+	//window.location.href = "index.html"
 });
 
 document.querySelector("#a_emoji").addEventListener("click", event=>{
