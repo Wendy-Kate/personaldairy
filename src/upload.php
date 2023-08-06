@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $targetDir = '../img/';
+  $targetDir = 'https://wendy-kate.github.io/personaldairy/img/';
   $targetFile = $targetDir . basename($_FILES['image']['name']);
 
   if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFile)) {
